@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Instrutor Antonio Neto — Direção Segura em Uruçuí</title>
+  <meta name="description" content="Aulas de direção com foco em confiança, técnica e aprovação no DETRAN. Atendimento em Uruçuí e região. Instrutor Antonio Neto." />
+  <meta property="og:title" content="Realize o sonho de dirigir com segurança em Uruçuí!" />
+  <meta property="og:description" content="Instrutor Antonio Neto — paciência, técnica e respeito ao seu tempo. WhatsApp: (89) 9421-9527" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#0f172a;        /* azul profundo — autoridade */
+      --card:#0b1224;      /* variação escura */
+      --text:#e5e7eb;      /* cinza claro */
+      --muted:#9aa3b2;     /* cinza médio */
+      --accent:#22c55e;    /* verde — segurança/confiança */
+      --accent-2:#c13584;  /* instagram */
+      --shadow:0 12px 30px rgba(0,0,0,.35);
+      --radius:14px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:linear-gradient(180deg,#0b1224 0%,#0f172a 100%);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+
+    /* Header */
+    .hero{
+      max-width:1100px;margin:0 auto;padding:48px 24px 24px;
+      display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center;
+    }
+    @media (max-width:900px){.hero{grid-template-columns:1fr}}
+    .badge{
+      display:inline-flex;align-items:center;gap:10px;
+      background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);
+      padding:8px 12px;border-radius:999px;font-weight:600;color:var(--muted)
+    }
+    .title{
+      font-size:clamp(28px,4.2vw,44px);line-height:1.15;margin:18px 0 10px;font-weight:800;
+      letter-spacing:-0.02em
+    }
+    .subtitle{color:var(--muted);font-size:clamp(15px,2.2vw,18px);line-height:1.6}
+
+    /* Card */
+    .card{
+      background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.03));
+      border:1px solid rgba(255,255,255,.12);border-radius:var(--radius);box-shadow:var(--shadow);
+      padding:22px
+    }
+    .list{list-style:none;margin:16px 0 0;padding:0;display:grid;gap:12px}
+    .list li{
+      display:flex;gap:10px;align-items:flex-start;color:var(--text);
+      background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);
+      padding:12px 14px;border-radius:12px
+    }
+    .list .icon{color:var(--accent);font-weight:700}
+
+    /* CTA buttons */
+    .cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:18px}
+    .btn{
+      display:inline-flex;align-items:center;gap:10px;padding:12px 16px;border-radius:12px;
+      font-weight:700;transition:transform .08s ease,box-shadow .2s ease;border:1px solid rgba(255,255,255,.12)
+    }
+    .btn:hover{transform:translateY(-1px)}
+    .btn:active{transform:translateY(0)}
+    .btn.whatsapp{background:linear-gradient(180deg,#25D366,#1ebe5d);color:#062b16}
+    .btn.instagram{background:linear-gradient(180deg,#c13584,#a12c6f);color:#2b0f1f}
+    .btn.secondary{background:rgba(255,255,255,.06);color:var(--text)}
+
+    /* Contact strip */
+    .contact-strip{
+      max-width:1100px;margin:0 auto;padding:0 24px 24px
+    }
+    .strip{
+      display:flex;justify-content:space-between;align-items:center;gap:16px;
+      background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);
+      border-radius:var(--radius);padding:16px 18px
+    }
+    @media (max-width:700px){.strip{flex-direction:column;align-items:flex-start}}
+    .tag{color:var(--muted)}
+    .phone{font-weight:800;font-size:18px}
+    .copy{cursor:pointer}
+
+    /* Sections */
+    section{max-width:1100px;margin:0 auto;padding:24px}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+    @media (max-width:900px){.grid{grid-template-columns:1fr}}
+
+    .faq-item{
+      background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);
+      border-radius:12px;padding:14px
+    }
+    .faq-item h4{margin:0 0 8px;font-size:18px}
+    .faq-item p{margin:0;color:var(--muted)}
+
+    /* Footer */
+    footer{
+      margin-top:10px;padding:24px;text-align:center;color:var(--muted);
+      border-top:1px solid rgba(255,255,255,.08)
+    }
+    .logo-mark{
+      width:64px;height:64px;border-radius:14px;
+      background:conic-gradient(from 180deg at 50% 50%, #22c55e, #0ea5e9, #c13584, #22c55e);
+      border:1px solid rgba(255,255,255,.18);box-shadow:var(--shadow);margin:0 auto 10px
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div>
+      <span class="badge">Instrutor Antonio Neto • Uruçuí, PI</span>
+      <h1 class="title">Realize o sonho de dirigir com segurança em Uruçuí! 🚗💨</h1>
+      <p class="subtitle">
+        Você tem habilitação, mas o medo de enfrentar o trânsito ainda fala mais alto?
+        Ou está se preparando para a prova prática e quer passar de primeira?
+      </p>
+      <div class="card" aria-label="Serviços">
+        <p style="margin:0 0 10px">
+          Eu sou o <strong>Instrutor Antonio Neto</strong>, especialista em transformar motoristas inseguros em condutores confiantes.
+          Meu trabalho é focado na paciência, na técnica e no respeito ao seu tempo.
+        </p>
+        <ul class="list">
+          <li><span class="icon">✅</span> Aulas para habilitados com medo de dirigir.</li>
+          <li><span class="icon">✅</span> Reforço focado na prova prática do DETRAN.</li>
+          <li><span class="icon">✅</span> Aulas para iniciantes.</li>
+          <li><span class="icon">✅</span> Direção defensiva.</li>
+          <li><span class="icon">✅</span> Aulas teóricas.</li>
+          <li><span class="icon">✅</span> Cursos profissionalizantes</li>
+          <li><span class="icon">✅</span> Horários flexíveis em Uruçuí.</li>
+          
+        </ul>
+        <div class="cta">
+          <a class="btn whatsapp" href="https://wa.me/558994219527?text=Olá%20Instrutor%20Antonio%20Neto,%20quero%20agendar%20minhas%20aulas." target="_blank" rel="noopener">
+            <span>💬 WhatsApp</span>
+          </a>
+          <a class="btn instagram" href="https://www.instagram.com/seuusuario" target="_blank" rel="noopener">
+            <span>📷 Instagram</span>
+          </a>
+          <button class="btn secondary copy" type="button" aria-label="Copiar telefone">
+            📲 Copiar telefone
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Placeholder para imagem profissional -->
+    <div class="card" aria-label="Imagem profissional">
+      <img src="" alt="Instrutor Antonio Neto em contexto profissional" id="heroImage" style="border-radius:12px;aspect-ratio:4/3;object-fit:cover;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12)">
+      <p class="tag" style="margin-top:10px">
+        Envie a foto do rosto para integrar ao uniforme e atualizar esta imagem.
+      </p>
+    </div>
+  </header>
+
+  <!-- Contact strip -->
+  <div class="contact-strip">
+    <div class="strip">
+      <div>
+        <div class="tag">Atendimento em Uruçuí e região</div>
+        <div class="phone">📲 (89) 9421-9527</div>
+      </div>
+      <div class="cta">
+        <a class="btn whatsapp" href="https://wa.me/558994219527?text=Olá%20Instrutor%20Antonio%20Neto,%20quero%20perder%20o%20medo%20de%20dirigir." target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
+        <a class="btn instagram" href="https://www.instagram.com/seuusuario" target="_blank" rel="noopener">Ver Instagram</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section: Por que escolher -->
+  <section aria-label="Autoridade e confiança">
+    <div class="grid">
+      <div class="card">
+        <h3 style="margin:0 0 8px">Autoridade e confiança</h3>
+        <p class="tag">
+          Metodologia clara, feedback objetivo e evolução mensurável a cada aula. Você dirige com segurança, sem pressa e sem pressão.
+        </p>
+      </div>
+      <div class="card">
+        <h3 style="margin:0 0 8px">Foco na aprovação</h3>
+        <p class="tag">
+          Treinos específicos para a prova prática do DETRAN: baliza, controle de embreagem, observação e tomada de decisão.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: FAQ -->
+  <section aria-label="Perguntas frequentes">
+    <div class="grid">
+      <div class="faq-item">
+        <h4>Quanto tempo até eu perder o medo?</h4>
+        <p>Varia por pessoa, mas com prática guiada e técnica correta, você percebe progresso já nas primeiras aulas.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Posso treinar no meu carro?</h4>
+        <p>Sim, avaliamos o cenário e definimos o plano com segurança e cobertura adequada.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Horários disponíveis?</h4>
+        <p>Flexíveis, incluindo manhã, tarde e noite em Uruçuí e região.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Formas de pagamento?</h4>
+        <p>À vista, pix e parcelado — combinamos o melhor para você.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="logo-mark" aria-hidden="true"></div>
+    <div>&copy; 2026 Instrutor Antonio Neto — Todos os direitos reservados.</div>
+  </footer>
+
+  <script>
+    // Copiar telefone
+    const copyBtn = document.querySelector('.copy');
+    copyBtn?.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText('(89) 9421-9527');
+        copyBtn.textContent = '✅ Telefone copiado';
+        setTimeout(()=> copyBtn.textContent = '📲 Copiar telefone', 1800);
+      } catch(e){
+        alert('Copie manualmente: (89) 9421-9527');
+      }
+    });
+
+    // Carregar imagem quando disponível (substitua a URL abaixo quando tiver a imagem integrada)
+    const heroImage = document.getElementById('heroImage');
+    const imageURL = ''; // Ex.: 'https://seu-dominio.com/antonio-neto-uniforme.jpg'
+    if(imageURL){ heroImage.src = imageURL; }
+
+    // UTM simples para WhatsApp/Instagram
+    const addUTM = (el, utm) => {
+      try{
+        const url = new URL(el.href);
+        url.searchParams.set('utm_source', utm.source);
+        url.searchParams.set('utm_medium', utm.medium);
+        url.searchParams.set('utm_campaign', utm.campaign);
+        el.href = url.toString();
+      }catch(e){}
+    };
+    document.querySelectorAll('.btn.whatsapp').forEach(el => addUTM(el, {
+      source:'site', medium:'cta', campaign:'whatsapp-contato'
+    }));
+    document.querySelectorAll('.btn.instagram').forEach(el => addUTM(el, {
+      source:'site', medium:'cta', campaign:'instagram-perfil'
+    }));
+  </script>
+</body>
+</html>
